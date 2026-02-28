@@ -4,7 +4,8 @@ class CinemaHall:
         self.number = number
 
     def movie_session(self, movie_name: str,
-                      customer: str, cleaning_staff: str) -> None:
+                      customer: str,
+                      cleaning_staff: str) -> None:
         print(f'"{movie_name}" started in hall number {self.number}.')
         for people in customer:
             people.watch_movie(movie_name)
